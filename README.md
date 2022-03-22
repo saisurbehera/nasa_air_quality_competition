@@ -3,7 +3,7 @@ nasa_air_quality_competition
 
 The project deals with the competition in Professor Iddo Drori class. In the project, we will be predicitng the pm2.5 level for the competition. 
 
-Setup:
+# Setup:
 ```
 aws s3 cp s3://drivendata-competition-airathon-public-us/pm25/train/maiac train/maiac --no-sign-request --recursive
 aws s3 cp s3://drivendata-competition-airathon-public-us/pm25/test/maiac test/maiac --no-sign-request --recursive
@@ -18,6 +18,7 @@ wget "https://drivendata-prod.s3.amazonaws.com/data/88/public/pm25_satellite_met
 wget "https://drivendata-prod.s3.amazonaws.com/data/88/public/submission_format.csv?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARVBOBDCYZDRLDSRZ%2F20220319%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20220319T204811Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=4c0d884967288edbe48b144a27da0024974337ec553846e6fe29c60bebe64a1d" -O submission_format.csv
 ```
 
+# Explanation
 Our process involves basically moving from a higher reolsution 1200x1200 images to go into smaller frames. We basically use a VAE to move from a high demensional 128 vectors. The basic principle of the our approach is shrinking the size and then use other process to effectively use the results. 
 
 In the final experiement, we use a FNN and a lightGBM model for the results. 
@@ -65,7 +66,7 @@ params = {
 ```
 
 We also use a hierchial model to go through the results. 
-
+# Experiments
 We also had done a lot of experiments. Feel free to check the notebooks tabs for final uses. These include.
 * Deep Vision Transofrmer
 * Vision Transofrmer
@@ -74,7 +75,9 @@ We also had done a lot of experiments. Feel free to check the notebooks tabs for
 * FB Propehet
 * Temporal Fusion model
 
-All these files are in teh notebook folder with final experiments. 
+
+# Navigation
+All these files are in thh notebook folder with final experiments. The final models are in the src models
 
 To setup and understand our preprocess steps please take a look at the notebooks at get_setup folder.
 
@@ -84,7 +87,7 @@ Since our dataset is to large, we have uploaded most of our data gdrive. If you 
 https://drive.google.com/file/d/19TSus9btTsgM4GaWaax-4_QITm8uUcOV/view?usp=sharing
 ```
 
-Hope you like our work
+Hope you like our work!
 
 
 

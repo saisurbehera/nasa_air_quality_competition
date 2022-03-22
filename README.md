@@ -3,6 +3,10 @@ nasa_air_quality_competition
 
 The project deals with the competition in Professor Iddo Drori class. In the project, we will be predicitng the pm2.5 level for the competition. 
 
+# Our whole project Image
+
+![alt text](./ds_structure.png)
+
 # Setup:
 ```
 aws s3 cp s3://drivendata-competition-airathon-public-us/pm25/train/maiac train/maiac --no-sign-request --recursive

@@ -1,0 +1,7 @@
+*.hdf
+*.hdf.*
+notebooks/get_data/train/
+data/raw/train/
+data/raw/test/
+*.nc
+data/external/scpppi/
